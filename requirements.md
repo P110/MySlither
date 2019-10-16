@@ -5,8 +5,8 @@
 ---
 
 ## Project Type: Online Slither Game Modification
--Project Start Date: Wednesday 16th October
--Project End Date: Wednesday 23rd October
+- Project Start Date: Wednesday 16th October
+- Project End Date: Wednesday 23rd October
 ---
 
 ## Overview
@@ -17,3 +17,6 @@
 ---
 
 ## Functional Requirements
+
+different colours for food
+party snake
