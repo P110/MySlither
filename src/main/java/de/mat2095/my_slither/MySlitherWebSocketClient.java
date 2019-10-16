@@ -553,7 +553,6 @@ final class MySlitherWebSocketClient extends WebSocketClient {
 
             // Pull the skinID from the websocket data
             int skin = data[17];
-            view.log("Skin ID: " + skin);
 
             int nameLength = data[24];
             StringBuilder name = new StringBuilder(nameLength);
@@ -575,7 +574,7 @@ final class MySlitherWebSocketClient extends WebSocketClient {
                 body.addFirst(new SnakeBodyPart(currentBodyPartX, currentBodyPartY));
             }
 
-            model.addSnake(id, name.toString(), x, y, wang, ang, sp, fam, body);
+            model.addSnake(id, name.toString(), x, y, wang, ang, sp, fam, body, skin);
         } else if (data.length == 6) {
             int id = (data[3] << 8) | (data[4]);
             model.removeSnake(id);

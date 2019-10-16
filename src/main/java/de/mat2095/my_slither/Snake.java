@@ -14,8 +14,21 @@ class Snake {
     private double fam;
     final Deque<SnakeBodyPart> body;
     private final MySlitherModel model;
+    private int skin;
+    private static final String[] skins = {
+        "purple",
+        "blue",
+        "cyan",
+        "green",
+        "yellow",
+        "orange",
+        "salmon",
+        "red",
+        "violet"
+    };
 
-    Snake(int id, String name, double x, double y, double wang, double ang, double sp, double fam, Deque<SnakeBodyPart> body, MySlitherModel model) {
+
+    Snake(int id, String name, double x, double y, double wang, double ang, double sp, double fam, Deque<SnakeBodyPart> body, MySlitherModel model, int skin) {
         this.id = id;
         this.name = name;
         this.x = x;
@@ -28,6 +41,8 @@ class Snake {
         this.fam = fam;
         this.body = body;
         this.model = model;
+        // Set the skin colour
+        this.skin = skin;
     }
 
     private double getSc() {
