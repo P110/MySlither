@@ -14,6 +14,7 @@ class Snake {
     private double fam;
     final Deque<SnakeBodyPart> body;
     private final MySlitherModel model;
+    private int skin;
 
     Snake(int id, String name, double x, double y, double wang, double ang, double sp, double fam, Deque<SnakeBodyPart> body, MySlitherModel model) {
         this.id = id;
