@@ -1,6 +1,8 @@
 package de.mat2095.my_slither;
 
+import java.awt.*;
 import java.util.Deque;
+import java.util.concurrent.ThreadLocalRandom;
 
 
 class Snake {
@@ -15,16 +17,16 @@ class Snake {
     final Deque<SnakeBodyPart> body;
     private final MySlitherModel model;
     private int skin;
-    private static final String[] skins = {
-        "purple",
-        "blue",
-        "cyan",
-        "green",
-        "yellow",
-        "orange",
-        "salmon",
-        "red",
-        "violet"
+    private static final int[] skins = {
+        0xAB27C2,
+        0x2094D2,
+        0x4EB5EC,
+        0x6A8759,
+        0xDBE80F,
+        0xE5890B,
+        0xEF8BCB,
+        0xFF0000,
+        0xE825DD
     };
 
 
@@ -72,4 +74,20 @@ class Snake {
     void setFam(double fam) {
         this.fam = fam;
     }
+
+    /**
+     * Returns the colour for this snake depending on the
+     * skin sent from the websocket message
+     * @return The colour of the snake
+     */
+    public Color getColour(){
+        if(this.skin > skins.length - 1){
+            // We don't have a colour for this skin, display a random colour
+            return new Color(skins[ThreadLocalRandom.current().nextInt(0, skins.length - 1)]);
+        }else {
+            // We have a colour for this skin, return it
+            return new Color(skins[this.skin]);
+        }
+    }
+
 }
