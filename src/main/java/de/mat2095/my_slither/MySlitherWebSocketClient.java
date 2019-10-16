@@ -551,6 +551,10 @@ final class MySlitherWebSocketClient extends WebSocketClient {
             double x = ((data[18] << 16) | (data[19] << 8) | data[20]) / 5.0;
             double y = ((data[21] << 16) | (data[22] << 8) | data[23]) / 5.0;
 
+            // Pull the skinID from the websocket data
+            int skin = data[17];
+            view.log("Skin ID: " + skin);
+
             int nameLength = data[24];
             StringBuilder name = new StringBuilder(nameLength);
             for (int i = 0; i < nameLength; i++) {
