@@ -40,4 +40,23 @@ This document is for the purpose of collaborating on a consistent set of require
 
 The scope of this project is a series of small modifications to the original open-source Slither.IO port, targeting the existing graphical system. Chiefly, this will include changes to colour and customisation, though as the team grow in skill the domain may increase.
 
-###
+### Defintions and Acronyms
+
+This document will use a series of acronyms for brevity, which will be documented below:
+1. S.I.P- Slither Improvement Project.
+2. RD - Requirements Document (this document).
+3. Port- A sub-version of an existing piece of software, heavily based on the origin with changes to make it work on another system.
+
+## 2. Users
+
+## 3 System Features and Requirements
+
+### 3.1 Functional Requirements
+
+**Colour Changing Snake**
+The original browser-based game allowed for skin customisation for your snake, from a list of existing presets. These do exist in the java-based port, as the websocket does transmit the colour of the snake to and from the server, though it doesn't implement them.
+
+*The snakes colour should be selectable by the user, and*
+
+Customisable snake
+Comment the code
