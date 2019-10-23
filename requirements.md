@@ -12,27 +12,18 @@
 ## Contents
 
 1. Introduction
----
 1.1 Intended Audience of this Documents
----
 1.2 Intended use
----
 1.3 Scope
----
 1.4 Definitions and Acronyms
 
 2. Users
----
 2.1 Stakeholders
----
 2.2 Needs
 
 3. System Features and Requirements
----
 3.1 Functional Requirements
----
 3.2 Non-functional Requirements
----
 
 ## 1. Introduction
 
