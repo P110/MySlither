@@ -49,6 +49,10 @@ This document will use a series of acronyms for brevity, which will be documente
 
 ## 2. Users
 
+### 2.1 Stakeholders
+**Kristian**
+Kristian is a competitive Slither.IO player, who has recently started using the Java implementation of the game as it allows him to make customisation to his game. He likes making modifications in order to increase his skill in the game, through better visual cues etc.
+
 ## 3 System Features and Requirements
 
 ### 3.1 Functional Requirements
