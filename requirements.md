@@ -60,10 +60,11 @@ The original browser-based game allowed for skin customisation for your snake, f
 *2. The colours of other players snakes must be visible to the user.*
 
 **Colour Changing Food**
-In the game there are various items to help your snake grow in size, 'food'.
+In the game there are various items to help your snake grow in size, 'food'. As the game gets very busy visually, food can become hard to spot on screen as it is all the same colour, which in the base java port, is the same colour as the snake, making the problem worse.
 
-*1. The snakes colour should be selectable by the user.*
-*2. The colours of other players snakes must be visible to the user.*
+*1. The colour of the food will change at random to increase visibility.*
 
-Customisable snake
-Comment the code
+**Commenting the Code**
+The original project is an open source varient of the popular browser game, though it is poorly documented. This made the changes to the program quite hard.
+
+*1. Comment each section of the code as they're improved, to allow future developers to make changes of their own.*
