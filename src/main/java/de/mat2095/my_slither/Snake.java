@@ -30,6 +30,7 @@ class Snake {
     };
 
 
+
     Snake(int id, String name, double x, double y, double wang, double ang, double sp, double fam, Deque<SnakeBodyPart> body, MySlitherModel model, int skin) {
         this.id = id;
         this.name = name;
