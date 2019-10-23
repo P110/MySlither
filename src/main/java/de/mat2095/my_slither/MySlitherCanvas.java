@@ -139,6 +139,8 @@ final class MySlitherCanvas extends JPanel {
         float gr = rand.nextFloat();
         float b = rand.nextFloat();
 
+
+
         if (!(graphics instanceof Graphics2D)) {
             return;
         }
@@ -149,6 +151,7 @@ final class MySlitherCanvas extends JPanel {
         int w = getWidth();
         int h = getHeight();
         int m = Math.min(w, h);
+
 
         modelPaintBlock:
         synchronized (view.modelLock) {
@@ -186,14 +189,18 @@ final class MySlitherCanvas extends JPanel {
             g.setStroke(oldStroke);
 
 
-            Color foodColor = new Color(r, gr, b);
-            g.setColor(foodColor);
+
+
 
 
             model.foods.values().forEach(food -> {
 
                 double foodRadius = food.getRadius();
                 g.fill(new Ellipse2D.Double(food.x - foodRadius, food.y - foodRadius, foodRadius * 2, foodRadius * 2));
+
+                Color foodColor = new Color(r, gr, b);
+                g.setColor(foodColor);
+
             });
 
             model.preys.values().forEach(prey -> {

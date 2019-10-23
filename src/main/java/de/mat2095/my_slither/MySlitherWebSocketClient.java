@@ -541,9 +541,6 @@ final class MySlitherWebSocketClient extends WebSocketClient {
     private void processAddRemoveSnake(int[] data) {
         if (data.length >= 31) {
             int id = (data[3] << 8) | (data[4]);
-            int skin = data[17];
-            view.log("skin: " + skin);
-
 
             double ang = ((data[5] << 16) | (data[6] << 8) | data[7]) * PI2 / ANGLE_CONSTANT;
             double wang = ((data[9] << 16) | (data[10] << 8) | data[11]) * PI2 / ANGLE_CONSTANT;
