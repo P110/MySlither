@@ -56,7 +56,14 @@ This document will use a series of acronyms for brevity, which will be documente
 **Colour Changing Snake**
 The original browser-based game allowed for skin customisation for your snake, from a list of existing presets. These do exist in the java-based port, as the websocket does transmit the colour of the snake to and from the server, though it doesn't implement them.
 
-*The snakes colour should be selectable by the user, and*
+*1. The snakes colour should be selectable by the user.*
+*2. The colours of other players snakes must be visible to the user.*
+
+**Colour Changing Food**
+In the game there are various items to help your snake grow in size, 'food'.
+
+*1. The snakes colour should be selectable by the user.*
+*2. The colours of other players snakes must be visible to the user.*
 
 Customisable snake
 Comment the code
