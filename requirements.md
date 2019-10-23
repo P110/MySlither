@@ -40,7 +40,7 @@ This document is for the purpose of collaborating on a consistent set of require
 
 The scope of this project is a series of small modifications to the original open-source Slither.IO port, targeting the existing graphical system. Chiefly, this will include changes to colour and customisation, though as the team grow in skill the domain may increase.
 
-### Defintions and Acronyms
+### 1.4 Defintions and Acronyms
 
 This document will use a series of acronyms for brevity, which will be documented below:
 1. S.I.P- Slither Improvement Project.
