@@ -1,6 +1,6 @@
 # Requirements
 
-## Project Name: Slither Improvement Projet S.I.P
+## Project Name: Slither Improvement Projcet (S.I.P)
 ### Team Manager: Peter Richards
 ---
 
